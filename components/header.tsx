@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from "@mui/material/IconButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LearnMenuComponent from "./MenuCat";
+//const { Web3 } = require('web3');
 
 interface Props {
   mode: PaletteMode;

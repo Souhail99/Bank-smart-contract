@@ -1,7 +1,6 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 var mnemonic = "Your mnemonic"
-var infuraApiKey = "Infura API Key"
-
+var infuraApiKey = "Your Infura API key"
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -22,8 +21,7 @@ var infuraApiKey = "Infura API Key"
  *
  */
 
-  //const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
+
   //const fs = require('fs');
   //const mnemonic = fs.readFileSync(".secret").toString().trim();
 

@@ -1,6 +1,7 @@
 import { SetStateAction, use, useEffect, useState } from 'react';
 import styles from '../../styles/Home.module.css'
-import Web3 from 'web3';
+
+const Web3 = require("web3");
 
 // Import the smart-contracts configuration (ABI and address)
 const config = require("../../blockchainapi/config");
