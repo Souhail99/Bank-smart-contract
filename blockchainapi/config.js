@@ -1,5 +1,5 @@
-const token_adresse = "0x5D282905D52404C47fDA5fA5ea86a80f935ebc7E";
-const bank_adresse = "0x5Fb9Ac4690243D6242396a1803DE62EFB0dC86bA";
+const token_adresse = "0xfeC1cce56F56F04d969A389E3e26001e418435Ad";
+const bank_adresse = "0xA260D6Dd74b5724220d5dca47DB87be12964a08b";
 
 
 const token_abi = [
@@ -707,6 +707,19 @@ const bank_abi = [
   {
     "inputs": [],
     "name": "InitAddPoolInBank",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RePool",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

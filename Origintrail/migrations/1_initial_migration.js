@@ -1,12 +1,12 @@
 
 // Uncomment the following three lines to make the test work (using your addresses provided by Ganache), and comment out the following three lines.
-//var account1= "0xcacafEde65602ed977124663E82Be0CD65cd19F7"
-//var user1= "0xc8616ee3AD058f921aFa56251ef5FF1f1Df84A79"
-//var user2= "0x4b7A28f9E6db2Ee7f7A8075d308Dae57717B1736"
+var account1= "0xcacafEde65602ed977124663E82Be0CD65cd19F7"
+var user1= "0xc8616ee3AD058f921aFa56251ef5FF1f1Df84A79"
+var user2= "0x4b7A28f9E6db2Ee7f7A8075d308Dae57717B1736"
 // Uncomment the following three lines to make the test work during migration (deployement) on a network like Sepolia (using your addresses), and comment out the previous three lines.
-var account1= "0xAf8F72618E39F5747B5065c1b93E34f70E193393"
-var user1= "0x5e93b8E9A69996a41F912B48f2Cf671450EF2226"
-var user2= "0xF9ACb7dC7e034b8353680DF71aF8Dc1dB9c7030A"
+//var account1= "0xc0bF7cdf6af9AC12A90Ee06d5C2D71899203e34C"
+//var user1= "0xAb72165E5F83Db5BF586E4683a42448E0a0804fC"
+//var user2= "0x7A958187052abf957A08724c6DE7B284EeAbe656"
 
 const Web3 = require('web3');
 const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545'); // Adjust the provider URL if needed
@@ -25,7 +25,7 @@ module.exports = (deployer, network, accounts) => {
 		await deployInit(deployer, network, accounts);
 
     // To do the test in the PDF file :
-    await MakeATest(deployer, network, accounts);
+    //await MakeATest(deployer, network, accounts);
 		
     });
 };

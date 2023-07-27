@@ -104,7 +104,7 @@ const IndexPage = () => {
     <>
     <div className={styles.container}>
     <div>
-        <p className={styles.className_44d352_2}>Mint tokens : </p>
+        <h2>Mint tokens : </h2>
         <form onSubmit={handleMint}>
         <input
           type="text"
@@ -133,7 +133,7 @@ const IndexPage = () => {
     <br></br>
       <p className={styles.className_44d352_2}> OR : </p>
     <br></br>
-    <p className={styles.className_44d352_2}>Deposit : </p>
+    <h2>Deposit : </h2>
     <form onSubmit={handleDeposit}>
         <input
           type="number"

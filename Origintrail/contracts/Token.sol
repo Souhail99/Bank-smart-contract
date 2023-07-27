@@ -49,7 +49,7 @@ contract Token is ERC20 {
      * @param to The address to which tokens are minted.
      * @param amount The amount of tokens to be minted.
      */
-    function mint(address to, uint256 amount) public onlyOwner {
+    function mint(address to, uint256 amount) public {
         //require(amount <= 500, "Do not cheat");
         _mint(to, amount * (10 ** 18));
     }

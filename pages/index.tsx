@@ -17,7 +17,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={styles.className_44d352}>Informations<span>&gt;</span></h2>
-          <p className={styles.className_44d352}>Check the GitHub's ReadMe for more information.</p>
+          <p className={styles.className_44d352}>Check the GitHub&apos;s ReadMe for more information.</p>
         </Link>
        
          

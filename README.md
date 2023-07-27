@@ -59,6 +59,13 @@ Click on the "Connect Wallet" button to connect your Ethereum wallet (e.g., Meta
 Your token balance is displayed at the top of the web app.
 It is automatically updated after each deposit, withdrawal, or minting transaction.
 
+### After migrations
+
+Modify the contract addresses in the ***config.js*** file:
+Ensure you update the addresses of the "Token" and "Bank" contracts in the config.js file located in the blockchainapi folder. Replace the current addresses with the new addresses of the contracts deployed on the test network (e.g., Ganache or another Ethereum test network).
+
+Currently, the addresses correspond to deployed contracts (in the file 1_initial_migration.js in migration, only the ***deployInit*** function was executed for contract deployment). However, you can interact with the contracts (especially for minting, see section ***Smart-contracts: RePool and Mint***).
+
 
 # Running Smart Contract Tests
 
@@ -76,3 +83,7 @@ truffle migrate --network sepolia
 ```
 
 Don't forget to launch Ganache before running the migration.
+
+# Smart-contracts : RePool and Mint
+
+For testing purposes and to make your life easier, there is a function called ***RePool*** that allows you to add tokens to the rewards pool and avoid deploying contracts for each test. Additionally, for testing convenience, the ***mint*** function is not restricted to OnlyOwner, making it easier to perform tests.

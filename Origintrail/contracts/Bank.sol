@@ -71,6 +71,16 @@ contract Bank is Ownable{
     }
 
     /**
+     * @dev We can re-pool the reward pool by transferring tokens to the contract.
+     * @param amount The amount of tokens to deposit.
+     */
+    function RePool(uint256 amount) public onlyCreator {
+
+        require(token.transferFrom(msg.sender, address(this), amount), "Failed to transfer tokens");
+        rewardPool = amount;
+    }
+
+    /**
      * @dev Deposit tokens into the bank. Users can deposit only once.
      * @param amount The amount of tokens to deposit.
      */
