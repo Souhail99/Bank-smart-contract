@@ -64,7 +64,7 @@ It is automatically updated after each deposit, withdrawal, or minting transacti
 
 1. Change Directory:
 ```bash
-cd truffle
+cd Origintrail
 ```
 2. Compile Smart-contracts:
 ```bash
