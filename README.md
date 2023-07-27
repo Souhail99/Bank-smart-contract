@@ -82,7 +82,7 @@ truffle compile
 truffle migrate --network sepolia
 ```
 
-Don't forget to launch Ganache before running the migration.
+**Don't forget to launch Ganache before running the migration. Don't forget to update the truffle-config in the Origintrail folder to add your mnemonic and Infura key.**
 
 # Smart-contracts : RePool and Mint
 
