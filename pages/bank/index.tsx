@@ -7,6 +7,12 @@ const Web3 = require("web3");
 const config = require("../../blockchainapi/config");
 var account1= "0xcacafEde65602ed977124663E82Be0CD65cd19F7"
 // Create a new Web3 instance
+
+// const web3 = new Web3(
+//   new Web3.providers.HttpProvider(
+//     `https://sepolia.infura.io/v3/83c866bc419f4a8ab92a9b464ab9a5d9`,
+//   ),
+// );
 var web3=new Web3(Web3.givenProvider || 'https://testnet.infura.io');
 
 // Create instances of the token and bank contracts using their ABIs and addresses
@@ -71,7 +77,7 @@ const IndexPage = () => {
       const userAddress = accounts[0];
 
       // Perform minting using the address provided by the user
-      await tokenContract.methods.mint(mintAddress, mintAmount).send({ from: account1 });
+      await tokenContract.methods.mint(mintAddress, mintAmount).send({ from: userAddress });
 
       // Clear the minting input field
       setMintAddress('');
@@ -96,10 +102,10 @@ const IndexPage = () => {
       const accounts = await web3.eth.getAccounts();
       const userAddress = accounts[0];
       const balances = await tokenContract.methods.balanceOf(userAddress).call();
-      console. log("Your token balance:", balances);
+      console.log("Your token balance:", balances);
       return balances
     }
-    getBalance().then ((res) => (setBalance(res/Math. pow (10, 18))))
+    getBalance().then ((res) => (setBalance(Number(res)/Math.pow(10, 18))))
   }, [])
   return (
     <>

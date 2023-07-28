@@ -25,6 +25,11 @@ declare var window: any;
 const Web3 = require("web3");
 
 const config = require("../blockchainapi/config");
+// const web3 = new Web3(
+//   new Web3.providers.HttpProvider(
+//     `https://sepolia.infura.io/v3/83c866bc419f4a8ab92a9b464ab9a5d9`,
+//   ),
+// );
 var web3 = new Web3(Web3.givenProvider || 'https://testnet.infura.io');
 const contracttokenContract = new web3.eth.Contract(config.token_abi, config.token_adresse);
 
@@ -95,8 +100,9 @@ const HeaderComponent: FC<Props> = ({ mode, onChange }) => {
   function LoginButton(account: any) {
     const getBalance = async () => {
       const balances = await contracttokenContract.methods.balanceOf(account).call();
-      console.log("Your token balance: ", balances);
-      return balances;
+      const tmp = await web3.utils.toHex(balances)
+      console.log("Your token balance:", parseInt(tmp, 16));
+      return parseInt(tmp, 16);
     }
     getBalance().then((res) => (setBalance(res / Math.pow(10, 18))));
   }

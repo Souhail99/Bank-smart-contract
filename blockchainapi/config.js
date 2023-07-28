@@ -1,5 +1,5 @@
-const token_adresse = "0x33bc57254889727d377dB3F217844b11681374f3";
-const bank_adresse = "0xA6421A6474e8d93c22E23336ddf0164D58807912";
+const token_adresse = "0x6e061cAF6add4DEa0475CEF26649225BC14a58E8";
+const bank_adresse = "0x40369a4581aa730d3b50a97F1c3fe5b927e98574";
 
 
 const token_abi = [
