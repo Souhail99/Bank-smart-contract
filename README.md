@@ -85,8 +85,6 @@ In our test, the lock period is 60 seconds, and the pool contains 1000 XYZ token
 ```javascript
 bank = await Bank.new(token.address,  60, 1000, {from:account1});
 ```
-In our test, the lock period is 60 seconds, and the pool contains 1000 XYZ tokens.
-
 We perform the test of the example provided in the technical assessment.
 
 **Don't forget to launch Ganache before running the migration. Don't forget to update the truffle-config in the Origintrail folder to add your mnemonic and Infura key.**
