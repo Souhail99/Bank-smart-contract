@@ -87,7 +87,7 @@ bank = await Bank.new(token.address,  60, 1000, {from:account1});
 ```
 We perform the test of the example provided in the technical assessment.
 
-**Don't forget to launch Ganache before running the migration. Don't forget to update the truffle-config in the Origintrail folder to add your mnemonic and Infura key.**
+**Don't forget to launch Ganache before running the migration. Don't forget to update the truffle-config in the Origintrail folder to add your mnemonic and Infura key. And to replace the addresses present in the migration file with yours!**
 
 # Smart-contracts : RePool and Mint
 
